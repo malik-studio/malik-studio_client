@@ -5,7 +5,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <div class="wrapper">
+    <div class="header-container">
       <HelloWorld logoContent="Malik Studio"/>
 
       <nav>
@@ -17,3 +17,12 @@ import HelloWorld from './components/HelloWorld.vue'
 
   <RouterView />
 </template>
+
+<style>
+.header-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+</style>
