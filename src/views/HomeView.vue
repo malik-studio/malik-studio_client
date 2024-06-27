@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import EmailPrimary from '../components/EmailPrimary.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    Your Digital Liaison
+    We design and build solutions for your business and we're damn good
+    <EmailPrimary />
   </main>
 </template>
