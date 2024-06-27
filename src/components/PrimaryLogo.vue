@@ -13,6 +13,7 @@ defineProps<{
 </template>
 
 <style>
+
 .logo_container {
   display: flex;
   flex-flow: row nowrap;
