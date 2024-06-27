@@ -3,9 +3,20 @@ import EmailPrimary from '../components/EmailPrimary.vue'
 </script>
 
 <template>
-  <main>
-    Your Digital Liaison
-    We design and build solutions for your business and we're damn good
+  <main class="main-home">
+    <h2>
+      Your Digital Liaison
+    </h2>
+    <p>
+      We design and build solutions for your business and we're damn good
+    </p>
     <EmailPrimary />
   </main>
 </template>
+
+<style>
+.main-home {
+  display: flex;
+  flex-flow: column nowrap;
+}
+</style>
