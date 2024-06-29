@@ -4,19 +4,33 @@ import EmailPrimary from '../components/EmailPrimary.vue'
 
 <template>
   <main class="main-home">
-    <h2>
+    <h2 class="home-heading-one">
       Your Digital Liaison
     </h2>
-    <p>
-      We design and build solutions for your business and we're damn good
+    <p class="home-heading-one-subtitle">
+      <span>
+      We design and build solutions for your business
+      </span>
+      <span>
+      and we're damn good
+      </span>
     </p>
     <EmailPrimary />
   </main>
 </template>
 
-<style>
+<style scoped>
 .main-home {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-heading-one-subtitle {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
 }
 </style>
