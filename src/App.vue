@@ -5,7 +5,7 @@ import PrimaryLogo from './components/PrimaryLogo.vue'
 
 <template>
   <header>
-    <div class="header-primary">
+    <div class="header-wrapper">
       <PrimaryLogo logoContent="Malik Studio" />
 
       <nav class="header-nav">
@@ -18,30 +18,44 @@ import PrimaryLogo from './components/PrimaryLogo.vue'
   <RouterView />
 
   <footer>
-    <div class="footer-section-top">
-      <nav class="footer-nav">
-        <RouterLink class="footer-nav-link" to="/">Home</RouterLink>
-        <RouterLink class="footer-nav-link" to="/about">About</RouterLink>
-      </nav>
-      <img src="./assets/icon/logo_icon_xs_black_svg.svg" alt="malik studio hand logo icon"/>
-    </div>
-
-    <div class="footer-section-bottom">
-      <p>malik studio</p>
-      <p>
-        <span>malik studio © 2024</span>
-        <span>v13.23.13</span>
-      </p>
+    <div>
+      <div class="footer-section-top">
+        <nav class="footer-nav">
+          <RouterLink class="footer-nav-link" to="/">Home</RouterLink>
+          <RouterLink class="footer-nav-link" to="/about">About</RouterLink>
+        </nav>
+        <img src="./assets/icon/logo_icon_xs_white_svg.svg" alt="malik studio hand logo icon" />
+      </div>
+      <div class="footer-section-bottom">
+        <p>malik studio</p>
+        <p>
+          <span>malik studio © 2024</span>
+          <span>v13.23.13</span>
+        </p>
+      </div>
     </div>
   </footer>
 </template>
 
-<style>
-.header-primary{
+<style scoped>
+header {
+  position: sticky;
+  top: 0;
+
+  padding: 1rem 2rem 0;
+}
+
+.header-wrapper {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
+}
+
+footer {
+  padding: 0 2rem 1rem;
+
+  background-color: #2A2A2A;
 }
 
 .footer-section-top {
@@ -59,5 +73,7 @@ import PrimaryLogo from './components/PrimaryLogo.vue'
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+
+  color: white;
 }
 </style>

@@ -8,6 +8,13 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
+  server: {
+    watch: {
+      // hmr
+      // remove if taxing cpu
+      usePolling: true,
+    }
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
