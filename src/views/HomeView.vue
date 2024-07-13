@@ -5,7 +5,7 @@ import EmailPrimary from '../components/EmailPrimary.vue'
 <template>
   <main class="main-home">
     <h2 class="home-heading-one">
-      Your Digital Liaison
+      Digital Provider and Liaison
     </h2>
     <p class="home-heading-one-subtitle">
       <span>

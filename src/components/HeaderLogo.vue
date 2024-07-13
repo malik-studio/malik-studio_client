@@ -7,7 +7,7 @@ defineProps<{
 
 <template>
   <div class="logo_container">
-    <img src="../assets/icon/logo_icon_xs_black_svg.svg" alt="malik studio hand logo icon" class="logo_image"/>
+    <img class="header-logo-image" src="../assets/icon/logo_icon_xs_black_svg.svg" alt="malik studio hand logo icon" />
     <p>{{ logoContent }}</p>
   </div>
 </template>
@@ -20,7 +20,7 @@ defineProps<{
   align-items: center;
 }
 
-.logo_image {
+.header-logo-image {
   width: 50px;
   height: 50px;
 }

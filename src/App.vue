@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import PrimaryLogo from './components/PrimaryLogo.vue'
+import HeaderLogo from './components/HeaderLogo.vue'
 </script>
 
 <template>
   <header>
     <div class="header-wrapper">
-      <PrimaryLogo logoContent="Malik Studio" />
+      <HeaderLogo logoContent="Malik Studio" />
 
       <nav class="header-nav">
         <RouterLink to="/">Home</RouterLink>
@@ -24,7 +24,7 @@ import PrimaryLogo from './components/PrimaryLogo.vue'
           <RouterLink class="footer-nav-link" to="/">Home</RouterLink>
           <RouterLink class="footer-nav-link" to="/about">About</RouterLink>
         </nav>
-        <img src="./assets/icon/logo_icon_xs_white_svg.svg" alt="malik studio hand logo icon" />
+        <img class="footer-logo-image" src="./assets/icon/logo_icon_xs_white_svg.svg" alt="malik studio hand logo icon" />
       </div>
       <div class="footer-section-bottom">
         <p>malik studio</p>
@@ -59,9 +59,12 @@ footer {
 }
 
 .footer-section-top {
+  position: relative;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+
+  padding: 1rem 0 0;
 }
 
 .footer-nav {
